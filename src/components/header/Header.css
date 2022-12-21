@@ -1,0 +1,107 @@
+
+.threeline{
+  display: none;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.first-part {
+  display: flex;
+  align-items: center;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
+.items p:hover{
+  background-color: #dbe3f3;
+  padding: 0.3rem;
+  color: #1763fd;
+}
+
+.items p:nth-child(1) {
+  background-color: #dbe3f3;
+  padding: 0.3rem;
+  color: #1763fd;
+}
+
+.items p {
+  margin-inline: 1rem;
+  font-weight: bold;
+}
+
+.drop-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.481);
+  padding: 0.5rem;
+}
+
+.drop-down:hover{
+  color: #1763fd;
+  background-color: #dbe3f3;
+}
+
+.drop-down img {
+  height: 12px;
+  width: 12px;
+}
+
+.drop-down p {
+  margin-inline: 0.3rem;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.sec-part {
+  display: flex;
+  align-items: center;
+}
+
+.drop-connect {
+  margin-inline: 0.5rem;
+  box-shadow: 3px 3px 0px 0px #888888;
+}
+
+.drop-connect:hover {
+  color: #1763fd;
+  background-color: #dbe3f3;
+}
+
+.drop-connect:active {
+  box-shadow: 0px 0px 0px 0px #888888;
+}
+
+
+@media screen and (max-width: 735px) {
+  .drop-connect {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .items {
+      display: none;
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline:1rem
+  }
+
+  .threeline{
+    display: block;
+    margin-inline: 0.5rem;
+  }
+
+}

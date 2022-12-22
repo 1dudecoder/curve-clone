@@ -1,9 +1,9 @@
 import React from "react";
-import "../pools/Pools.css"
 import search from "../../../assets/token-icon/search.svg";
 import tokens from "../../../assets/pool-icons/tokens.jpg";
 import Footer from "../../footer/Footer";
 import down from "../../../assets/down.svg";
+import "../pools/pool.css"
 
 function Pools() {
   return (
@@ -260,6 +260,7 @@ function Pools() {
             </div>
             <img src={down} alt="down-icon" />
           </div>
+          
         </div>
 
         <Footer />

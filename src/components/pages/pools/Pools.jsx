@@ -28,8 +28,6 @@ function Pools() {
                 <div>CRYPTO</div>
                 <div>OTHERS</div>
               </div>
-
-
             </div>
 
             <table className="table-container">
@@ -181,17 +179,14 @@ function Pools() {
                 <td className="r-t">$530.9k</td>
                 <td className="r-t">$23.2m</td>
               </tr>
-
-
             </table>
           </div>
         </div>
 
         <div className="mob-pool-container">
-          
           <div className="hide-checkbox">
             <div>
-            <input type="checkbox" />
+              <input type="checkbox" />
             </div>
             <p>Hide very small pools</p>
           </div>
@@ -223,20 +218,6 @@ function Pools() {
             </div>
             <img src={down} alt="down-icon" />
           </div>
-          
-          <div className="mob-row">
-            <div className="mob-item">
-              <div>
-                <img src={tokens} alt="token-icon" />
-              </div>
-              <div>
-                <p>atricrypto3</p>
-                <p>0x92...22cc</p>
-                <p>DAI USD WBTC WETH</p>
-              </div>
-            </div>
-            <img src={down} alt="down-icon" />
-          </div>
 
           <div className="mob-row">
             <div className="mob-item">
@@ -266,6 +247,19 @@ function Pools() {
             <img src={down} alt="down-icon" />
           </div>
 
+          <div className="mob-row">
+            <div className="mob-item">
+              <div>
+                <img src={tokens} alt="token-icon" />
+              </div>
+              <div>
+                <p>atricrypto3</p>
+                <p>0x92...22cc</p>
+                <p>DAI USD WBTC WETH</p>
+              </div>
+            </div>
+            <img src={down} alt="down-icon" />
+          </div>
         </div>
 
         <Footer />

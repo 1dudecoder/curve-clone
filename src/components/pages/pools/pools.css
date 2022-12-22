@@ -3,7 +3,6 @@
     width: 80%;
     padding: 1rem;
     margin-top: 40rem;
-
 }
 
 .input-pool{
@@ -91,8 +90,6 @@
     display: block;
 }
 
-/* mob version */
-
 .mob-pool-container{
     width: 100%;
     display: none;
@@ -101,7 +98,6 @@
 
 .hide-checkbox{
     display: flex;
-
     width: 100%;
 }
 
@@ -129,7 +125,6 @@
 .mob-item{
     display: flex;
     margin: 0.5rem;
-
     padding: 0.5rem;
 }
 

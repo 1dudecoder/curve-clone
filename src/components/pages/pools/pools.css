@@ -46,7 +46,6 @@
     margin-bottom: 1rem;
 }
 
-
 .filter-hide input{
     margin-inline: 0.5rem;
     height: 1rem;
@@ -78,7 +77,6 @@
 .r-t{
     padding: 0.5rem;
 }
-
 
 .table-container{
     margin-left: auto;
@@ -142,7 +140,6 @@
         margin-top: 48rem;
     }
 }
-
 
 @media (max-width: 925px) {
     .pool-container{

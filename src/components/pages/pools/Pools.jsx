@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pools.css";
+// import "./Pools.css";
 import search from "../../../assets/token-icon/search.svg";
 import tokens from "../../../assets/pool-icons/tokens.jpg";
 import Footer from "../../footer/Footer";

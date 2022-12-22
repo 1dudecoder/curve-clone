@@ -19,7 +19,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/pool" element={<Pools />} />
         </Routes>
-        <Footer />
+
       </BrowserRouter>
     </div>
   );

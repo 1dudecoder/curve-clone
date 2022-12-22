@@ -8,15 +8,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .cal {
-  margin-top: 32vh;
+  margin-top: 28rem;
   min-width: 450px;
   height: 500px;
   background-color: whitesmoke;
   box-shadow: 7px 7px 0px 0px #88888871;
   height: fit-content;
+  
 }
 
 .head {
@@ -144,6 +146,7 @@
   }
 }
 
+/* 
 @media (max-height: 700px) {
   .cal {
     margin-top: 18rem;
@@ -153,4 +156,4 @@
     height: 90vh;
   }
 
-}
+} */

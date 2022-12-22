@@ -6,6 +6,7 @@ import updown from "../../assets/updown.svg";
 import usdt from "../../assets/usdt.svg"
 import iicon from "../../assets/iicon.svg"
 import setting from "../../assets/setting.svg"
+import Footer from "../footer/Footer";
 
 function Calculator({setModal}) {
 
@@ -129,10 +130,11 @@ function Calculator({setModal}) {
                 <p>Connect Wallet</p>
               </div>
             </div>
-
           </div>
         </div>
+        <Footer />
       </div>
+
     </div>
   );
 }

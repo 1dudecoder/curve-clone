@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../footer/Footer'
 import "../dashboard/Dashboard.css"
 
 function Dashboard() {
@@ -84,6 +85,8 @@ function Dashboard() {
           </div>
 
         </div>
+
+        <Footer />
       </div>
 
     </div>

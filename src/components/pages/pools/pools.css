@@ -1,0 +1,188 @@
+.pool-container{
+    background-color: white;
+    width: 80%;
+    padding: 1rem;
+    margin-top: 40rem;
+
+}
+
+.input-pool{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-block: 1rem;
+    border: 2px solid rgba(128, 128, 128, 0.69);
+}
+
+.input-pool input{
+    width: 100%;
+    margin-inline: 0.5rem;
+    padding: 0.2rem;
+    outline: none;
+    border: none;
+    font-size: larger;
+}
+
+.filter-button{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+}
+
+.filter-button div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.filter-button div div{
+    background-color: #024CDE;
+    color:white;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    font-weight: bolder;
+    box-shadow: 8px 8px 8px  #888888;
+    margin-bottom: 1rem;
+}
+
+
+.filter-hide input{
+    margin-inline: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.filter-hide p{
+    font-weight: bolder;
+}
+
+
+.thead-item{
+    padding: 1rem;
+    text-align: start;
+}
+
+
+.row-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-item div{
+    margin: 0.2rem;
+}
+
+
+.r-t{
+    padding: 0.5rem;
+}
+
+
+.table-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.pc-pool-container{
+    display: block;
+}
+
+/* mob version */
+
+.mob-pool-container{
+    width: 100%;
+    display: none;
+    background-color: white;
+}
+
+.hide-checkbox{
+    display: flex;
+
+    width: 100%;
+}
+
+.hide-checkbox input{
+    margin-inline: 1rem;
+    width: 1rem;
+    height: 1rem;
+
+}
+
+.fil-btn{
+    display: flex;
+}
+
+.pool-btn{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.412);
+    padding: 0.2rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+
+.mob-item{
+    display: flex;
+    margin: 0.5rem;
+
+    padding: 0.5rem;
+}
+
+.mob-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    border-top: 2px solid rgba(128, 128, 128, 0.504);
+   
+}
+
+@media (max-width: 1118px) {
+    .pool-container{
+        margin-top: 48rem;
+    }
+}
+
+
+@media (max-width: 925px) {
+    .pool-container{
+        margin-top: 48rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 730px) {
+    .pc-pool-container{
+        display: none;
+    }
+
+    
+
+    .mob-pool-container{
+        display: block;
+    }
+
+    .pool-container{
+        margin-top: 18rem;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .pool-container{
+        margin-top: 23rem;
+        width: 100%;
+    }
+}
+
+
+
+
+
+

@@ -7,7 +7,7 @@ import usdt from "../../assets/usdt.svg"
 import iicon from "../../assets/iicon.svg"
 import setting from "../../assets/setting.svg"
 
-function Calculator() {
+function Calculator({setModal}) {
 
   const [daiState,setDai] = useState("");
   const [usdtState,SetUsdt] = useState("");
@@ -63,13 +63,15 @@ function Calculator() {
             <div className="first-input">
               <input type="text" value={daiState} onChange={handleData} />
               <p>MAX</p>
-              <div className="max-button">
+              <div className="max-button" onClick={ ()=>{setModal(true)} }>
+                
                 <img
                   src={dai}
                   alt="dai-image"
                   style={{ width: "15px", height: "15px" }}
                 />
                 <p>DAI</p>
+
               </div>
             </div>
 
@@ -82,9 +84,8 @@ function Calculator() {
 
             <div className="first-input">
               
-              <input type="text" value={usdtState} />
-           
-              <div className="max-button">
+              <input type="text" value={usdtState} /> 
+              <div className="max-button" onClick={()=>{setModal(true)}}>
                 <img
                   src={usdt}
                   alt="dai-image"
@@ -128,6 +129,7 @@ function Calculator() {
                 <p>Connect Wallet</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -1,0 +1,68 @@
+.modal-container {
+  position: absolute;
+  background-color: #F2F2F2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  padding: 1rem;
+  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  width: 450px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem;
+
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border: 2px solid grey;
+  margin: 1rem;
+  background-color: white;
+}
+
+.token-items {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 1rem;
+  flex-wrap: wrap;
+  place-content: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.351);
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.item:active{
+  background-color: rgba(128, 128, 128, 0.24);
+}
+
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.checkbox p {
+    margin-inline: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+  .modal-container {
+    width: 100%;
+  }
+}

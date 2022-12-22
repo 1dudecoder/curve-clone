@@ -1,0 +1,37 @@
+
+.drop-down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(128, 128, 128, 0.481);
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  background-color: white;
+}
+
+.parent-relative{
+  position: relative;
+
+}
+
+.children{
+  position: absolute;
+}
+
+.drop-down:hover {
+  color: #1763fd;
+  background-color: #dbe3f3;
+}
+
+.drop-down img {
+  height: 12px;
+  width: 12px;
+}
+
+.drop-down p {
+  margin-inline: 0.3rem;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+

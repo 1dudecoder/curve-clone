@@ -16,6 +16,8 @@
 
 .children{
   position: absolute;
+  background: white;
+  box-shadow: 3px 3px 0px 1px #808080a6;
 }
 
 .drop-down:hover {

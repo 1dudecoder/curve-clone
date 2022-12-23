@@ -6,15 +6,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/pages/dashboard/Dashboard";
 import Footer from "./components/footer/Footer";
 import Pools from "./components/pages/pools/Pools";
+import Sidebar from "./components/sildebar/Sidebar";
+import { useState } from "react";
 
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <Header />
+        <Header  />
+        <Sidebar />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Main  />} />
           <Route path="/home" element={<Main />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/pool" element={<Pools />} />

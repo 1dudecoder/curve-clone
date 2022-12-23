@@ -146,14 +146,20 @@
   }
 }
 
-/* 
-@media (max-height: 700px) {
-  .cal {
-    margin-top: 18rem;
-  }
+.wallet-not-connect{
+  background-color: green;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: larger;
+  padding: 1rem;
+  margin-block: 1rem;
+  font-weight: bolder;
+  box-shadow: 4px 4px 0px 0px #888888d0;
+}
 
-  .main-div {
-    height: 90vh;
-  }
 
-} */
+.wallet-not-connect:active{
+  background-color: rgba(0, 128, 0, 0.632);
+  box-shadow: 0px 0px 0px 0px #888888;
+}

@@ -1,0 +1,94 @@
+.crosssidebar{
+    text-align: end;
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.sidebar-container{
+    width: 250px;
+    height: 92vh;
+    position: absolute;
+    top:0;
+    z-index: 5;
+    background-color: white;
+}
+
+.sidebaritem{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sidebaritem p{
+    margin-inline: 1rem;
+    width: 80%;
+    background-color: white;
+    margin-block: 0.5em;
+}
+
+.sidebarlogo{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    background-color: #80808000;
+}
+
+.sidebarlogo img{
+    margin:auto;
+}
+
+
+.sid-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 0.5rem;
+}
+
+
+.sidebaritem p {
+    font-weight: bolder;
+}
+
+.sun-icon{
+    display: flex;
+    align-items: center;
+}
+
+.sun-icon img{
+    padding-inline:0.2rem
+}
+
+.side-count p:nth-child(1){
+    font-size: 1.2rem;
+}
+
+.sidebar-connect{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    box-shadow: 3px 3px 0px 0px #888888;
+}
+
+.active-side{
+    background-color: #dbe3f3;
+    
+}
+
+.active-side:active{
+    background-color: white;
+}
+
+
+@media screen and (min-width: 467px) {
+    .main-sidebar{
+        display: none;
+    }   
+  }
+  

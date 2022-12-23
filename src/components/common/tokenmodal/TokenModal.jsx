@@ -1,14 +1,14 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import "./TokenModal.css";
 import search from "../../../assets/token-icon/search.svg";
+
 import dai from "../../../assets/token-icon/dai.svg";
 import usdt from "../../../assets/token-icon/usdt.svg";
 import usdc from "../../../assets/token-icon/usdc.svg";
 import wbtc from "../../../assets/token-icon/wbtc.svg";
 import par from "../../../assets/token-icon/dai.svg";
 
-function TokenModal({ state, setState }) {
-
+function TokenModal({ state, setState, setSecItem, setFirstItem, clickedOne }) {
   let tokensarr = [
     {
       id: 1,
@@ -39,9 +39,44 @@ function TokenModal({ state, setState }) {
 
   const [tokens, setToken] = useState(tokensarr);
 
+  const handleItemClick = (id) => {
+    let data = tokensarr.filter((item) => item.id === id)[0];
+
+    if (clickedOne == 1) {
+      setFirstItem({
+        name: data.name,
+        image: data.image,
+      });
+    }
+    if (clickedOne == 2) {
+      setSecItem({
+        name: data.name,
+        image: data.image,
+      });
+    }
+
+    setState(false);
+  };
+
+  const handleClickitems = () => {
+    if (clickedOne == 1) {
+      setFirstItem({
+        name: data.name,
+        image: data.image,
+      });
+    }
+    if (clickedOne == 2) {
+      setSecItem({
+        name: data.name,
+        image: data.image,
+      });
+    }
+    setState(false);
+  }
+
   const handleInputChange = (e) => {
     const newitems = tokens.filter((item) => {
-      if (item.name.toLowerCase().includes(e.target.value)) {
+      if (item.name.toLowerCase().includes(e.target.value.toLowerCase())) {
         return item;
       }
     });
@@ -97,7 +132,7 @@ function TokenModal({ state, setState }) {
           </div>
 
           <div className="token-items">
-            <div className="item">
+            <div className="item" onClick={handleClickitems}>
               <img
                 src={dai}
                 style={{
@@ -175,7 +210,13 @@ function TokenModal({ state, setState }) {
               tokens.map((item) => {
                 return (
                   <>
-                    <div className="item" key={item.id}>
+                    <div
+                      className="item"
+                      key={item.id}
+                      onClick={() => {
+                        handleItemClick(item.id);
+                      }}
+                    >
                       <img
                         src={item.image}
                         style={{

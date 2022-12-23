@@ -260,7 +260,6 @@ function Pools() {
             </div>
             <img src={down} alt="down-icon" />
           </div>
-          
         </div>
 
         <Footer />
